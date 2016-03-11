@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+ <name>Ito</name>
+ <creationDate>2015-05-05</creationDate>
+ <author>Alex Agal</author>
+ <authorEmail>agal.282@gmail.com</authorEmail>
+ <authorUrl></authorUrl>
+ <copyright>Copyright Info</copyright>
+ <license>License Info</license>
+ <version>1.00</version>
+ <description>Производственная деятельность ...</description>
+ 
+ <files folder="site">
+  <folder>codebase</folder>
+  <filename>controller.php</filename>
+  <filename>index.html</filename>
+  <filename>ito.php</filename>
+  <folder>controllers</folder>
+ <folder>models</folder>
+  <folder>images</folder>
+  <folder>views</folder>
+ </files>
+
+ <install>
+  <sql>
+    <file charset="utf8" driver="mysql">install.sql</file>
+  </sql>
+ </install>
+ <uninstall>
+  <sql>
+    <file charset="utf8" driver="mysql">uninstall.sql</file>
+  </sql>
+ </uninstall>
+ 
+ <administration>
+  <!-- Administration Menu Section -->
+  <menu>Ито</menu>
+ 
+  <!-- Administration Main File Copy Section -->
+  <files folder="admin">
+   <filename>ito.php</filename>
+   <filename>index.html</filename>
+   <filename>install.sql</filename>
+   <filename>uninstall.sql</filename>
+   <folder>tables</folder>
+  </files>
+
+ </administration>
+</install>
